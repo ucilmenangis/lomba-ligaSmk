@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200&family=Roboto:wght@100;300&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 , h2 {
+    margin: 0;
+}
+
+html, body{
+    padding: 0;
+    margin: 0;    
+}
+
+/* navbar */
+nav {
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    height: 60px;
+    background-color: white;
+}
+
+nav :where(.nav-logo , .nav-links){
+    width: 100%;
+}
+
+nav .nav-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .nav-logo h3 {
+    margin: 0;
+}
+
+nav .nav-links {
+    gap: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .nav-links a {
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 100ms;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav .nav-links a:hover {
+    color: rgb(132, 0, 255);
+}
+
+/* ------------------------------------------ tampilan ------------------------------------------*/
+.tampilan-awal {
+    background-color: aliceblue;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    /* padding-top: 100px; */
+    padding-bottom: 100px;
+    gap: 40px;
+}
+
+.tampilan-awal-text {
+    padding: 60px;
+    width: 600px;
+}
+
+.tampilan-awal-text .tampilan-awal-text-button button {
+    background-color: rgb(67, 67, 158);
+    color: white;
+    padding: 10px;
+    width: 200px ;
+    border: 0;
+    border-radius: 5px;
+    display: flex;
+}
+
+.tampilan-awal-text .tampilan-awal-text-button button h3 {
+    margin: 0;    
+    width: 100%;
+}
+
+.tampilan-awal-text .tampilan-awal-text-button button img {
+
+    padding-right: 10px;
+}
+
+.tampilan-awal .tampilan-awal-gambar {
+    background: url("../img/shape-diagram.png");
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-position: center;
+}
+
+/* ------------------------------------------ pantun ------------------------------------------*/
+.pantun-flex {
+    display: flex;
+    justify-content: center;
+}
+
+main .pantun {
+    padding: 50px;
+    display: flex;
+    background-color: rgb(255, 210, 87);
+}
+
+main .pantun :where(.pantun-karir , .pantun-materi , .pantun-skill){
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+main .pantun .pantun-text {
+    text-align: center;
+}
+
+/* ------------------------------------------ konten gambar------------------------------------------ */
+.obsolete-img {
+    position: absolute;
+    width: 50px;
+    height: 30px;
+}
+
+main .gambar {
+    background-color: rgb(237, 240, 244);
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+main .gambar .gambar-nav {
+    display: flex;
+    padding: 20px;
+}
+
+main .gambar .gambar-nav :where( .gambar-nav-heading , .gambar-nav-links ){
+    width: 100%;
+}
+
+main .gambar .gambar-nav .gambar-nav-heading {
+    display: flex
+}
+
+main .gambar .gambar-nav .gambar-nav-links {
+    width: 1200px;
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .gambar .gambar-nav .gambar-nav-links a{
+    padding: 5px;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 100ms ease-in-out;
+}
+
+main .gambar .gambar-nav .gambar-nav-links a:hover {
+    box-shadow: 0px 0px 30px;
+}
+
+/* konten gambar */
+main .gambar .gambar-konten {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+main .gambar .gambar-konten-all {
+    border: 1px solid rgb(216, 214, 214);
+    width: 250px;
+}
+
+main .gambar .gambar-konten-all-img {
+    height: 200px;
+    background-position: center;
+}
+
+main .gambar .gambar-konten-all-img img {
+    width: 100%;
+    height: 100%;
+}
+
+main .gambar .gambar-konten .gambar-konten-all-text {
+    padding: 20px;
+}
+
+main .gambar .gambar-konten .gambar-konten-all-text p {
+    color: rgb(31, 31, 203);
+}
+
+main .gambar .gambar-konten .gambar-konten-all-buttons {
+    display: flex;
+    padding: 10px;
+    gap: 20px;
+}
+
+main .gambar .gambar-konten .gambar-konten-all-buttons a {
+    display: flex;
+    color: black;
+    text-decoration: none;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+main .gambar .gambar-konten .gambar-konten-all-buttons a p {
+    color: black;
+}
+
+/* ------------------------------------------ membership------------------------------------------*/
+main .membership {
+    background-color: bisque;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+main .membership .membership-text {
+    width: 400px;
+}
+
+main .membership .membership-button button{
+    color: white;
+    padding: 20px;
+    border: 0;
+    border-radius: 10px;
+    background-color: rgb(31, 31, 203);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* ------------------------------------------ konten kategori ------------------------------------------ */
+main .kategori {
+    background-color: rgb(243, 246, 248);
+    display: flex;
+    flex-direction: column;
+    padding: 150px;
+    padding-top: 0;
+}
+
+main .kategori .kategori-header {
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+main .kategori .kategori-konten {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+main .kategori .kategori-konten-div {
+    background-color: white;
+    display: flex;
+    gap: 10px;
+    width: 220px;
+    padding: 20px;
+}
+
+main .kategori .kategori-konten-div-text {
+    display: flex;
+    flex-direction: column;
+}
+
+main .kategori .kategori-konten-div-text :where(h3 , p) {
+    margin: 0;
+}
+
+main .kategori .kategori-konten-explore {
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .kategori .kategori-konten-explore a {
+    color: rgb(132, 0, 255);
+    text-decoration: none;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* ------------------------------------------ Skill container ------------------------------------------ */
+main .skill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    /* padding-left: 80px; */
+    /* padding-right: 80px; */
+}
+
+main .skill-container {
+    display: flex;
+    gap: 60px;
+    width: 80%;
+    background-color: aliceblue;
+    padding: 80px;
+}
+
+main .skill-container .skill-container-text-button {
+    margin-top: 50px;
+}
+
+main .skill-container .skill-container-text-button button {
+    border: 0;
+    background-color: rgb(31, 31, 203);
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+
+/* ------------------------------------------ event image ------------------------------------------ */
+main .event .event-container {
+    
+    display: flex;
+    flex-direction: column;
+}
+
+main .event .event-container .event-container-header {
+    margin: 60px;
+}
+
+main .event .event-container .event-container-header h1{
+    text-align: center;
+}
+
+main .event .event-container .event-container-konten {
+    display: flex;
+    gap: 20px;
+    padding: 70px;
+}
+
+main .event .event-container .event-container-konten-all {
+    width: 400px;
+}
+
+main .event .event-container .event-container-konten-all .event-container-konten-all-img img {
+    width: 100%;
+}
+
+main .event .event-container .event-container-konten-all .event-container-konten-all-text {
+    padding: 30px;
+}
+
+main .event .event-container .event-container-konten-all .event-container-konten-all-text .event-container-konten-all-location {
+    display: flex;
+    gap: 20px;
+}
+
+main .event .event-container .event-container-konten-all .event-container-konten-all-text .event-container-konten-all-location .event-container-konten-all-location-tanggal {
+    /* display: flex; */
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+main .event .event-container .event-container-konten-all .event-container-konten-all-text .event-container-konten-all-location .event-container-konten-all-location-tanggal h1 {
+    color: rgb(132, 0, 255);
+}
+
+main .event .event-container .event-container-konten-all .event-container-konten-all-text .event-container-konten-all-location .event-container-konten-all-location-tempat {
+    display: flex;    
+    align-items: center;
+    gap: 10px;
+}
+
+/* ------------------------------------------ Footer ------------------------------------------ */
+
+footer {
+    color: aliceblue;
+    padding: 50px;
+    background-color: rgb(5, 5, 38);
+}
+
+/* links 1 */
+footer .footer-links-1 {
+    gap: 20px;
+    display: flex;
+    padding-bottom: 30px;
+}
+
+footer .footer-links-1 .footer-links-1-card .footer-links-1-header {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+footer .footer-links-1 .footer-links-1-card {
+    width: 600px;
+}
+
+footer .footer-links-1 .footer-links-1-card .footer-links-1-ligasmk-links{
+    display: flex;
+    gap: 20px;
+}
+
+footer .footer-links-1 .footer-links-1-card .footer-links-1-links{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer .footer-links-1 .footer-links-1-card .footer-links-1-links a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+footer .footer-links-1 .footer-links-1-card .footer-links-1-links-img {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+footer .footer-links-1 .footer-links-1-card .footer-links-1-links-img img {
+    /* width: 100px; */
+    /* height: 30px; */
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* links 2 */
+footer .footer-links-2 {
+    display: flex;
+    align-items: center;
+}
+
+footer .footer-links-2 .footer-links-2-links {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+footer .footer-links-2 .footer-links-2-links-ligasmk {
+    width: 140px;
+}
+
+footer .footer-links-2 {
+    border-top: 1px solid rgb(49, 48, 48);
+}
+
+footer .footer-links-2 :where(a , p){
+    text-decoration: none;
+    color: rgb(237, 235, 235);
+}
